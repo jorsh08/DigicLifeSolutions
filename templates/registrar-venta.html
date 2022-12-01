@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Ventas</title>
+</head>
+
+<body>
+    <div class="mensaje-confirmacion" id="mensaje-confirmacion">
+        <p>¿Finalizar la venta?</p>
+        <button onclick="regresarVenta()" class="confirmacion-regresar">REGRESAR</button>
+        <button onclick="finalizarCarrito()" class="confirmacion-aceptar">ACEPTAR</button>
+    </div>
+    <div class="container">
+        <div class="row">
+            <!--MENU Y BOTONES--->
+            <div class="col-2">
+                <div class="container">
+                    <div class="contenedor-principal mt-4">
+                        <!--LOGO -->
+                        <div class="logo">
+                            <div class="row mt-5">
+                                <img src="img/Digic LiFE.png" alt="">
+                                <h2
+                                    style="color: var(--azul); display: flex; justify-content: center; align-items: center;">
+                                    VENTAS</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="imagen-venta" id="imagen-venta">
+                                    <img src="/pi/none" width="350px" height="355px">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--LISTA--->
+            <div class="col-10">
+                <div class="container">
+                    <div class="contenido-lista-ventas">
+                        <div class="buscador">
+                            <div class="row">
+                                <div class="col">
+                                    <label for="Venta">BUSCAR REFACCION</label>
+                                    <div class="input-buscar">
+                                        <input type="text" id="input-buscador">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-refacciones">
+                            <div id="contenido-lista-ventas"></div>
+                        </div>
+                    </div>
+                    <div class="seleccion">
+                        <div class="selec">
+                            <div class="row mt-2">
+                                <div class="col-4">
+                                    <div class="input-cliente" id="input-cliente">
+                                        <input type="text" value="0" id="id-input-seleccion" style="display: none;" disabled>
+                                        <input type="text" value="CLIENTE OCASIONAL" id="input-cliente-seleccion" disabled>
+                                    </div>
+                                    <div class="buscador-cliente" id="buscador-cliente">
+                                        <label for="">BUSCAR CLIENTE</label>
+                                        <input type="text" id="input-buscador-clientes">
+                                        <div class="lista-clientes" id="lista-clientes"></div>
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="carrito">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                REFACCION
+                                            </div>
+                                            <div class="col-3">
+                                                CANTIDAD
+                                            </div>
+                                            <div class="col-3">
+                                                PRECIO
+                                            </div>
+                                            <div class="col-3">
+                                                
+                                            </div>
+
+                                            <div class="" id="lista-carrito"></div>
+                                        </div>
+                                    </div>
+                                    <div class="menu-carrito">
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <button class="aceptar" onclick="confirmarVenta()" id="venta" style="opacity: 0.5;" disabled>VENTA</button>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <a href="principal-venta" class="regresar">REGRESAR</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="totales">
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <p class="carrito-total" id="total">0$</p>
+                                                        </div>
+                                                        <div class="col">
+                                                            <p>Total</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/registrar-venta.js"></script>
+    <script src="https://kit.fontawesome.com/9eca617fd0.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

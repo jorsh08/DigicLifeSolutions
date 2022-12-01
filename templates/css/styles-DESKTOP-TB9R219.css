@@ -1,0 +1,642 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+:root{
+    --rojo: #eb774d;
+    --verde: #089434;
+    --azul:#086c94;
+    --gris: #cfcfcf;
+}
+
+.cliente-op{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.logo{
+    margin: auto;
+    width: 450px;
+    margin-top: 10px;
+}
+
+.logo-ventas{
+    margin: auto;
+    width: 450px;
+    margin-top: 10px;
+}
+
+.logo-ventas h2{
+    display: flex;
+    justify-content: center;
+    Align-items: center;
+    margin-bottom: 30px;
+    color: var(--azul);
+}
+
+.logo-reparaciones{
+    margin: auto;
+    width: 450px;
+    margin-top: 10px;
+}
+
+.logo-reparaciones h2{
+    display: flex;
+    justify-content: center;
+    Align-items: center;
+    margin-bottom: 30px;
+    color: var(--verde);
+}
+
+.logo-clientes{
+    margin: auto;
+    width: 450px;
+    margin-top: 10px;
+}
+
+.logo-clientes h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    color: var(--rojo);
+}
+
+body{
+    font-family: 'Fredoka One', serif;
+}
+
+.contenido{
+    width: 100%;
+    max-width: 900px;
+    min-width: 300px;
+    height: 100%;
+    min-height: 400px;
+    max-height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px 10px var(--gris);
+}
+
+.menu{
+    width: 600px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.menu .card{
+    margin: 50px;
+    border: none;
+    transition: .5s ease all;
+}
+
+.menu .card:hover{
+    transform: translateY(15px);
+}
+
+.menu-venta{
+    width: 700px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-venta .card{
+    margin: 20px;
+    border: none;
+    transition: .5s ease all;
+}
+
+.menu-venta .card:hover{
+    transform: translateY(15px);
+}
+
+.ventasT{
+    width: 100px;
+    height: 100px;
+    color: var(--azul);
+    font-size: 100px;
+}
+
+.ventasT:hover{
+    color: var(--azul);
+}
+
+.reparacionesT:hover{
+    color: var(--verde);
+}
+
+.reparacionesT{
+    width: 100px;
+    height: 100px;
+    color: var(--verde);
+    font-size: 100px;
+}
+
+.ventas{
+    background: var(--azul);
+    width: 100px;
+    height: 100px;
+    text-decoration: none;
+    border: none;
+    margin: 20px;
+}
+
+.reparaciones{
+    background: var(--verde);
+    width: 100px;
+    height: 100px;
+    text-decoration: none;
+    border: none;
+    margin: 20px;
+}
+
+.inicio-main{
+    margin-top: 50px;
+}
+
+.caja-principal{
+    width: 100%;
+    max-width: 800px;
+    min-width: 200px;
+    height: 100%;
+    max-height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.formulario-login{
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    max-height: 400px;
+    max-width: 400px;
+    min-width: 200px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px 10px var(--gris);
+}
+
+.formulario-registrar{
+    width: 100%;
+    max-width: 400px;
+    min-width: 200px;
+}
+
+.registrar{
+    display: flex;
+    width: 100%;
+    max-width: 400px;
+    min-width: 300px;
+    padding-top: 25px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.contraseña-olvidada{
+    display: flex;
+    width: 100%;
+    max-width: 400px;
+    min-width: 300px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.enlace{
+    text-decoration: none;
+    display: inline-block;
+    color: var(--azul);
+    border-bottom: 1px solid transparent;
+    transition: .2s ease all;
+}
+
+.enlace:hover{
+    letter-spacing: 1px;
+    border-bottom: 1px solid var(--azul);
+}
+
+.formulario-login input[type=text], input[type=password]{
+    width: 100%;
+    height: 40px;
+    background: var(--gris);
+    border: none;
+    border-radius: 10px;
+    color: black;
+    outline: none;
+}
+
+.formulario-registrar input[type=text], input[type=password]{
+    width: 100%;
+    max-width: 400px;
+    height: 40px;
+    margin: auto;
+    background: var(--gris);
+    border: none;
+    border-radius: 10px;
+    color: black;
+    outline: none;
+}
+
+.botones{
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    margin: auto;
+}
+
+.regresar{
+    margin: auto;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid var(--azul);
+    color: var(--azul);
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    transition: .5s ease all;
+}
+
+.pagado input[type="checkbox"]{
+    width: 30px;
+    height: 40px;
+}
+
+.atras{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.regresar-ventas{
+    font-size: 12px;
+    margin: auto;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid var(--azul);
+    color: var(--azul);
+    width: 90px;
+    height: 30px;
+    border-radius: 10px;
+    transition: .5s ease all;
+}
+
+.aceptar{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--azul);
+    color: white;
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    transition: .5s ease all;
+    text-decoration: none;
+}
+
+.regresar:hover{
+    transform: translateY(12px);
+    background: var(--azul);
+    color: white;
+}
+
+.regresar-ventas:hover{
+    transform: translateY(12px);
+    background: var(--azul);
+    color: white;
+}
+
+.aceptar:hover{
+    color: white;
+    transform: translateY(12px);
+}
+
+.formulario--input-error{
+    display: none;
+}
+
+.formulario--input-error-activo{
+    display: block;
+}
+
+.formulario--input:focus{
+    outline: none;
+}
+
+.formulario--grupo-incorrecto p{
+    font-size: 11px;
+    color: black;
+}
+
+.formulario--grupo-incorrecto input[type="text"]{
+    border: 3px solid red;
+}
+
+.formulario--grupo-incorrecto input[type="password"]{
+    border: 3px solid red;
+}
+
+
+.contenedor-principal{
+    width: 450px;
+    height: 450px;
+}
+
+.sub-menu{
+    width: 250px;
+    height: 180px;
+    box-shadow: 5px 5px 15px 10px var(--gris);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.sub-menu input[type=text]{
+    background: gray;
+    border: none;
+    border-radius: 10px;
+    color: black;
+    outline: none;
+}
+
+.sub-menu button{
+    font-size: 12px;
+    width: 90px;
+    height: 30px;
+    background: var(--azul);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    transition: .5s ease all;
+}
+
+.sub-menu button:hover{
+    transform: translateY(12px);
+}
+
+
+.botones-sub-menu a{
+    width: 100px;
+    height: 100px;
+    font-size: 48px;
+    margin: auto;
+    margin-top: 30px;
+    text-decoration: none;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s ease all;
+}
+
+.botones-sub-menu a:hover{
+    transform: translateY(12px);
+}
+
+.contadores{
+    width: 400px;
+    height: 120px;
+    box-shadow: 5px 5px 15px 10px var(--gris);
+    margin: auto;
+
+}
+
+.contenido-lista{
+    margin-top: 80px;
+    width: 800px;
+    height: 500px;
+    box-shadow: 5px 5px 15px 10px var(--gris);
+    overflow: hidden;
+    overflow-y: scroll;
+    border-radius: 10px;
+}
+
+.lista{
+    width: 450px;
+    height: 100px;
+    margin: auto;
+    margin-top: 15px;
+    box-shadow: 5px 5px 15px 10px var(--gris);
+    border-radius: 10px;
+}
+
+.contenido-principal-ventas{
+    margin: auto;
+    width: 500px;
+    height: 400px;
+    box-shadow: 5px 5px 15px 10px var(--gris);
+}
+
+
+.formulario-ventas{
+    width: 400px;
+    height: 300px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.contenido-prinicipal-clientes{
+    margin: auto;
+    width: 500px;
+    height: 620px;
+    box-shadow: 5px 5px 15px 10px var(--gris);
+    border-radius: 10px;
+}
+
+.contenido-prinicipal-reparaciones{
+    margin: auto;
+    width: 500px;
+    height: 600px;
+    box-shadow: 5px 5px 15px 10px var(--gris);
+    border-radius: 10px;
+}
+
+.contenido-prinicipal-finalizar-reparaciones{
+    margin: auto;
+    padding-top: 30px;
+    width: 500px;
+    height: 650px;
+    box-shadow: 5px 5px 15px 10px var(--gris);
+    border-radius: 10px;
+    color: black;
+}
+
+.contenido-prinicipal-reparaciones-pendientes{
+    margin: auto;
+    width: 800px;
+    height: 515px;
+    box-shadow: 5px 5px 15px 10px var(--gris);
+    border-radius: 10px;
+    overflow: hidden;
+    overflow-y: scroll;
+    color: black;
+}
+
+.formulario-reparaciones{
+    width: 400px;
+    height: 630px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.formulario-reparaciones select{
+    height: 50px;
+    width: 250px;
+    border: none;
+    outline: none;
+    background: var(--gris);
+    border-radius: 10px;
+}
+
+.formulario-reparaciones button{
+    width: 60px;
+    height: 50px;
+    background-color: var(--azul);
+    color: white;
+    font-size: 28px;
+    border: none;
+    transition: .5s ease all;
+    border-radius: 10px;
+}
+
+.formulario-reparaciones button:hover{
+    transform: translateY(12px);
+}
+
+.formulario-clientes{
+    width: 400px;
+    height: 630px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.formulario-ventas input[type=text]{
+    width: 100%;
+    max-width: 400px;
+    height: 40px;
+    margin: auto;
+    background: var(--gris);
+    border: none;
+    border-radius: 10px;
+    color: black;
+    outline: none;
+}
+
+.formulario-ventas .row{
+    margin: 15px 15px;
+    font-size: 20px;
+}
+
+.formulario-clientes input[type=text]{
+    width: 100%;
+    max-width: 400px;
+    height: 40px;
+    margin: auto;
+    background: var(--gris);
+    border: none;
+    border-radius: 10px;
+    color: black;
+    outline: none;
+}
+
+.formulario-reparaciones input[type=text]{
+    width: 100%;
+    max-width: 400px;
+    height: 40px;
+    margin: auto;
+    background: var(--gris);
+    border: none;
+    border-radius: 10px;
+    color: black;
+    outline: none;
+}
+
+.formulario-reparaciones input[type=number]{
+    width: 100%;
+    max-width: 100px;
+    height: 40px;
+    background: var(--gris);
+    border: none;
+    border-radius: 10px;
+    color: black;
+    outline: none;
+}
+
+.descripcion{
+    background: var(--gris);
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+.descripcionT{
+    background: var(--gris);
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    resize: none;
+}
+
+.formulario-clientes .row{
+    margin: 15px 15px;
+    font-size: 20px;
+}
+
+.formulario-reparaciones .row{
+    margin: 15px 15px;
+    font-size: 20px;
+}
+ 
+.contenedor-reparaciones{
+    box-shadow: 5px 5px 5px 5px var(--gris);
+    width: 720px;
+    height: 110px;
+    margin: auto;
+    border-radius: 10px;
+    
+}
+
+.contenedor-reparaciones label{
+    font-size: 14px;
+}
+
+
+.contenedor-reparaciones a{
+    font-size: 25px;
+
+}
+
+.parametro{
+    font-style: italic;
+    font-size: 18px;
+    color: rgb(87, 87, 87);
+}
+
+.mensaje{
+    width: 100%;
+    max-width: 400px;
+    height: 150px;
+    margin: auto;
+    margin-top: 250px;
+    background: white;
+    border-radius: 10px;
+    opacity: 1;
+}

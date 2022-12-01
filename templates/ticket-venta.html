@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Venta recibida</title>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col">
+            <!--LOGO -->
+            <div class="logo">
+                <div class="row mt-1">
+                    <img src="img/Digic LiFE.png" alt="">
+                    <h2 style="color: var(--azul); display: flex; justify-content: center; align-items: center;">COMPROBANTE</h2>
+                    <H2 style="color: var(--azul); display: flex; justify-content: center; align-items: center;">DE</H2>
+                    <H2 style="color: var(--azul); display: flex; justify-content: center; align-items: center;">VENTA</H2>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="contenido-ticket-venta">
+        <div class="row">
+            <div class="col-6">
+                <div class="contenedor-digiclife">
+                    <div class="row mt-2">
+                        <div class="digic-info">
+                            <div class="row">
+                                <p>CONTACTO@DIGICLIFE.COM</p>
+                            </div>
+                            <div class="row">
+                                <p>461 IGNACIO MANUEL ALTAMIRANO</p>
+                            </div>
+                            <div class="row">
+                                <p>CIUDAD OBREGÓN, SONORA 85170, MEXICO</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="contenedor-informacion">
+                    <div class="row">
+                        <div class="col">
+                            <p>FOLIO VENTA: {{ v.id_venta }}</p>
+                            <p>FECHA Y HORA: {{ v.fecha }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contenedor-clientes-ticket-venta">
+            <div class="row">
+                    <div class="col">
+                        <div class="info-tic">
+                            <div class="row">
+                                <div class="col"><p >CLIENTE: </p></div>
+                                <div class="col"><p>CELULAR: </p></div>
+                                <div class="col"><p>CORREO: </p></div>
+                            </div>
+                            <div class="row">
+                                <div class="col"> <p style="color: rgb(87, 87, 87);">{{ c.nombres }}</p></div>
+                                <div class="col"> <p style="color: rgb(87, 87, 87);">{{ c.celular }}</p></div>
+                                <div class="col"><p style="color: rgb(87, 87, 87);">{{ c.email }}</p></div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="row">
+                <div class="info-tic-venta">
+                    <div class="row">
+                        <div class="col"><p>CÓDIGO: </p></div>
+                        <div class="col"><p>DESCRIPCIÓN: </p></div>
+                        <div class="col"><p>CANTIDAD: </p></div>
+                        <div class="col"><p>PRECIO</p></div>
+                    </div>
+                    {% for a in articulos %}
+                    <div class="row">
+                        <div class="col">
+                            
+                            <p style="color: rgb(87, 87, 87);">{{ a['barcode'] }}</p>
+                        </div>
+                        <div class="col">
+                            
+                            <p style="color: rgb(87, 87, 87);"> {{ n[loop.index-1] }}</p>
+                        </div>
+                        <div class="col">
+                            <p style="color: rgb(87, 87, 87);">{{ a['cantidad'] }}</p>
+                        </div>
+                        <div class="col">
+                            <p style="color: rgb(87, 87, 87);">{{ a['precio'] }}</p>
+                        </div>
+                    </div>
+                        
+                    {% endfor %}
+                    <div class="row">
+                        <div class="col">TOTAL</div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"><p>${{ v.total }}</p></div>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+    <div class="row mt-4 mb-4">
+        <a href="/principal-venta" class="regresar">REGRESAR</a>
+    </div>
+    
+
+    <script src="https://kit.fontawesome.com/9eca617fd0.js" crossorigin="anonymous"></script>
+</body>
+
+<foot style="text-align: center; font-size: 12px;">
+    <p>AVISO DE PRIVACIDAD: https://digiclife.com/privacidad</p>
+</foot>
+
+</html>
